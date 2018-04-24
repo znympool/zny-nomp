@@ -33,8 +33,8 @@
     "website": {
         "enabled": true,
         "host": "0.0.0.0",
-        "port": 8080,
-        "stratumHost": "cryppit.com",
+        "port": 80,
+        "stratumHost": "mpool.mpool.jp",
         "stats": {
             "updateInterval": 30,
             "historicalRetention": 14400,
