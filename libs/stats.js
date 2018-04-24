@@ -752,11 +752,11 @@ module.exports = function(logger, portalConfig, poolConfigs){
 	}
 	
     this.getReadableHashRateString = function(hashrate){
-		hashrate = (hashrate * 2);
+		hashrate = (hashrate * 1000000);
 		if (hashrate < 1000000) {
-			return (Math.round(hashrate / 1000) / 1000 ).toFixed(2)+' Sol/s';
-		}
-        var byteUnits = [ ' Sol/s', ' KSol/s', ' MSol/s', ' GSol/s', ' TSol/s', ' PSol/s' ];
+		    return '0 Hash/s';
+                }
+        var byteUnits = [ ' Hash/s', ' KHash/s', ' MHash/s', ' GHash/s', ' THash/s', ' PHash/s' ];
         var i = Math.floor((Math.log(hashrate/1000) / Math.log(1000)) - 1);
         hashrate = (hashrate/1000) / Math.pow(1000, i + 1);
         return hashrate.toFixed(2) + byteUnits[i];
@@ -765,8 +765,8 @@ module.exports = function(logger, portalConfig, poolConfigs){
 	function getReadableNetworkHashRateString(hashrate) {
 		hashrate = (hashrate * 1000000);
 		if (hashrate < 1000000)
-			return '0 Sol';
-		var byteUnits = [ ' Sol/s', ' KSol/s', ' MSol/s', ' GSol/s', ' TSol/s', ' PSol/s' ];
+			return '0 Hash/s';
+		var byteUnits = [ ' Hash/s', ' KHash/s', ' MHash/s', ' GHash/s', ' THash/s', ' PHash/s' ];
 		var i = Math.floor((Math.log(hashrate/1000) / Math.log(1000)) - 1);
 		hashrate = (hashrate/1000) / Math.pow(1000, i + 1);
 		return hashrate.toFixed(2) + byteUnits[i];
