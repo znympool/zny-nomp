@@ -147,9 +147,9 @@ function updateStats() {
 	totalImmature = statData.immature;
 	totalShares = statData.totalShares;
 	// do some calculations
-	var _blocktime = 250;
-	var _networkHashRate = parseFloat(statData.networkSols) * 1.2;
-	var _myHashRate = (totalHash / 1000000) * 2;
+	var _blocktime = 90;
+	var _networkHashRate = parseFloat(statData.networkSols);
+	var _myHashRate = totalHash;
 	var luckDays =  ((_networkHashRate / _myHashRate * _blocktime) / (24 * 60 * 60)).toFixed(3);
 	// update miner stats
 	$("#statsHashrate").text(getReadableHashRateString(totalHash));
@@ -219,6 +219,8 @@ $.getJSON('/api/worker_stats?'+_miner, function(data){
 
 // live stat updates
 statsSource.addEventListener('message', function(e){
+        if (document.hidden) return;
+
 	// TODO, create miner_live_stats...
 	// miner_live_stats will return the same josn except without the worker history
 	// FOR NOW, use this to grab updated stats
