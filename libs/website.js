@@ -43,7 +43,8 @@ module.exports = function(logger){
         'admin.html': 'admin',
         'mining_key.html': 'mining_key',
         'miner_stats.html': 'miner_stats',
-        'payments.html': 'payments'
+        'payments.html': 'payments',
+        'link.html' : 'link''
     };
 
     var pageTemplates = {};
