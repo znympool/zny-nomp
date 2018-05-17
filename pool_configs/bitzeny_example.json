@@ -1,0 +1,63 @@
+{
+    "enabled": false,
+    "coin": "bitzeny.json",
+
+    "address": "bitzeny address",
+
+    "rewardRecipients": {
+        "bitzeny address": 1.5
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 20,
+        "minimumPayment": 70,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 9252,
+            "user": "daemon user",
+            "password": "daemon password"
+        }
+    },
+
+    "ports": {
+        "3333": {
+            "diff": 1,
+            "varDiff": {
+                "minDiff": 0.0001,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 9252,
+            "user": "daemon user",
+            "password": "daemon password"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": true
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "ltc",
+        "checkPassword": true,
+        "autoCreateWorker": false
+    }
+
+}

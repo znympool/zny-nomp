@@ -12,9 +12,9 @@
         "zcash",
         "equihash"
     ],
-    "homepage": "https://github.com/zencashio/z-nomp",
+    "homepage": "https://github.com/znympool/zny-nomp",
     "bugs": {
-        "url": "https://github.com/zencashio/z-nomp/issues"
+        "url": "https://github.com/znympool/zny-nomp/issues"
     },
     "license": "MIT",
     "author": "Joshua Yabut",
@@ -31,7 +31,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zencashio/z-nomp.git"
+        "url": "https://github.com/znympool/zny-nomp.git"
     },
     "dependencies": {
         "async": "1.5.2",
@@ -49,7 +49,7 @@
         "nonce": "1.0.4",
         "redis": "2.7.1",
         "request": "2.81.0",
-        "stratum-pool": "git://github.com/kpooljp/node-stratum-pool-lyra2rev2.git"
+        "stratum-pool": "git://github.com/znympool/node-stratum-pool-yescrypt-0.5"
     },
     "engines": {
         "node": ">=0.10"
