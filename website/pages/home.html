@@ -80,12 +80,12 @@
 
 <div class="pure-g-r" id="boxWelcome">
     <div class="pure-u">
-        <div id="welcomeText">MPOOL is a Monacoin mining pool </div>
+        <div id="welcomeText">MPOOL is a Bitzeny mining pool </div>
         <ul id="welcomeItems">
             <li>Server: Japan </li>
-            <li>Pool fee is 0.1%</li>
+            <li>Pool fee is 1%</li>
             <li>Payment method is prop</li>
-            <li>Minimum payment is 1 MONA</li>
+            <li>Minimum payment is 1 ZNY</li>
         </ul>
     </div>
 </div>
@@ -95,21 +95,29 @@
         <div id="welcomeText">Getting Started</div>
         <ul id="welcomeItems">
 
-<li>Download a miner. Best miner is <a href="https://askmona.org/9245">here</a></li>
+<li>GPUで採掘する場合は <a href="https://askmona.org/9245">こちら</a> のマイニングソフトが良いと思います。</li>
+<li>Download a miner. Gpu best miner is <a href="https://askmona.org/9245">here</a></li>
 
-<li>./ccminer -a lyra2v2 -o stratum+tcp://mona.mpool.jp:[PORT] -u [MONACOIN ADDRESS] -p x
+<li>CPUで採掘する場合は <a href="https://github.com/BitzenyCoreDevelopers/cpuminer">こちら</a>のマイニングソフトが良いと思います。</li>
+<li>Cpu miner is <a href="https://github.com/BitzenyCoreDevelopers/cpuminer">here</a></li>
+
+
+
+
+<li>./ccminer -a yescryptr8 -o stratum+tcp://zny.mpool.jp:3333 -u [BITZENY ADDRESS] -p x
 </li>
-<li>[PORT] : 3333 : Hashrate ~1MH/s<BR>
-    [PORT] : 4444 : Hashrate ~10MH/s<BR>
-    [PORT] : 5555 : Hashrate ~100MH/s<BR>
-    [PORT] : 6666 : Hashrate ~1GH/s<BR>
-    [PORT] : 7777 : Hashrate ~10GH/s<BR>
-    [PORT] : 8888 : Hashrate 10GH/s~
+
+<li>./minerd -a yescrypt -o stratum+tcp://zny.mpool.jp:3333 -u [BITZENY ADDRESS] -p x </li>
+
+<li>[BITZENY ADDRESS] is your bitzeny address</li>
+
+<li>もしワーカー名を追加したい場合は、 ./ccminer -a yescryptr8 -o stratum+tcp://zny.mpool.jp:3333 -u [BITZENY ADDRESS].[WORKERNAME] -p x
+の様にアドレスの後に . ワーカー名を入れてください。</li>
+
+<li>if workername add ./ccminer -a yescryptr8 -o stratum+tcp://zny.mpool.jp:3333 -u [BITZENY ADDRESS].[WORKERNAME] -p x
 </li>
-<li>[MONACOIN ADDRESS] is your monacoin address</li>
-<li>if workername add ./ccminer -a lyra2v2 -o stratum+tcp://mona.mpool.jp:[PORT] -u [MONACOIN ADDRESS].[WORKERNAME] -p x
-</li>
-<li>example : ./ccminer -a lyra2v2 -o stratum+tcp://mona.mpool.jp:4444 -u MKLUVk7oh66oeMEYebJt3G5ey8tm4gGo2x -p x
+
+<li>example : ./ccminer -a yescryptr8 -o stratum+tcp://zny.mpool.jp:3333 -u ZqvHJPYWe3Ed7CmVENj3rMxkqnd1VHePx2 -p x
 </li>
 
 
@@ -140,13 +148,13 @@
             <div class="boxLowerHeader">Link</div>
 
 <ul>
-<li><a href="https://monacoin.org/" target="_blank">Official site</a></li>
-<li><a href="https://mona.chainsight.info/" target="_blank">insight (block chain explorer)</a></li>
+<li><a href="https://bitzeny.tech/" target="_blank">Official site</a></li>
+<li><a href="https://zeny.insight.monaco-ex.org/" target="_blank">insight (block chain explorer)</a></li>
 
 <li><a href="https://electrum-mona.org/" target="_blank">ELECTRUM MONA (light wallet)</a></li>
-<li><a href="http://askmona.org/" target="_blank">Ask Mona (community)</a></li>
-<li><a href="https://discord.gg/dzSnTsT" target="_blank">Discord</a></li>
-
+<li><a href="https://bitzeny.jp" target="_blank">online wallet</a></li>
+<li><a href="https://bitzeny.info/" target="_blank">Bitzeny forum</a></li>
+<li><a href="http://bitzeny.cswiki.jp/" target="_blank">WIKI</a></li>
 
 
 </ul>
